@@ -7,7 +7,7 @@ title: With Regard
     {% for post in site.posts %}
       <h2>{{ post.title }}</h2>
       
-      {% assign author = site.authors[page.author] %} 
+      {% assign author = site.authors[post.author] %} 
       
       <p class="meta">{{ author.display_name }} {{ post.date | date_to_string }}</p>
 
